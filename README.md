@@ -1,9 +1,13 @@
 To run this:
 
 pip3 install -r requirements.txt
+
 To run the fast subdomain scanner:
+
 python fast_subdomain_scanner.py --help
+
 Output:
+
 usage: fast_subdomain_scanner.py [-h] [-l WORDLIST] [-t NUM_THREADS] domain
 
 Faster Subdomain Scanner using Threads
@@ -20,9 +24,13 @@ optional arguments:
 -t NUM_THREADS, --num-threads NUM_THREADS
                         Number of threads to use to scan the domain. Default
                         is 10
+
 If you want to scan hackthissite.org for subdomains using only 10 threads with a word list of 100 subdomains (subdomains.txt):
+
 python fast_subdomain_scanner.py hackthissite.org -l subdomains.txt -t 10
+
 After a while, it outputs:
+
 [+] Discovered subdomain: http://mail.hackthissite.org
 [+] Discovered subdomain: http://www.hackthissite.org
 [+] Discovered subdomain: http://forum.hackthissite.org
