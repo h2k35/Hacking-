@@ -29,10 +29,13 @@ If you want to scan hackthissite.org for subdomains using only 10 threads with a
 
 python subdomainscanner.py hackthissite.org -l subdomains.txt -t 10
 
-After a while, it outputs:
+ After a while, it outputs:
 [+] Discovered subdomain: http://mail.hackthissite.org
+
 [+] Discovered subdomain: http://www.hackthissite.org
+
 [+] Discovered subdomain: http://forum.hackthissite.org
+
 [+] Discovered subdomain: http://admin.hackthissite.org
-[+] Discovered subdomain: http://stats.hackthissite.org
-[+] Discovered subdomain: http://forums.hackthissite.org
+
+For larger subdomains https://github.com/rbsec/dnscan
