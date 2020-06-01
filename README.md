@@ -18,13 +18,11 @@ domain                Domain to scan for subdomains without protocol (e.g
                         without 'http://' or 'https://')
 
 optional arguments:
--h, --help            show this help message and exit
--l WORDLIST, --wordlist WORDLIST
-                        File that contains all subdomains to scan, line by
-                        line. Default is subdomains.txt
--t NUM_THREADS, --num-threads NUM_THREADS
-                        Number of threads to use to scan the domain. Default
-                        is 10
+-h, --help             show this help message and exit
+-l WORDLIST,          --wordlist WORDLIST
+                        File that contains all subdomains to scan, line by line. Default is subdomains.txt
+-t NUM_THREADS, --num-threads NUM_THREADS Number of threads to use to scan the domain. Default  is 10
+
 If you want to scan hackthissite.org for subdomains using only 10 threads with a word list of 100 subdomains (subdomains.txt):
 
 python subdomainscanner.py hackthissite.org -l subdomains.txt -t 10
